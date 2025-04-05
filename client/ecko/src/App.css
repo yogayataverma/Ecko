@@ -1,0 +1,288 @@
+.App {
+  min-height: 100vh;
+  background-color: #010409;
+  color: #7d8590;
+}
+
+.App-header {
+  background-color: #0d1117;
+  border-bottom: 1px solid #21262d;
+  padding: 16px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #7d8590;
+}
+
+.main-nav {
+  display: flex;
+  gap: 16px;
+}
+
+.nav-item {
+  color: #7d8590;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.nav-item:hover {
+  background-color: #161b22;
+  color: #7d8590;
+}
+
+.search-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  background-color: #0d1117;
+  border: 1px solid #21262d;
+  border-radius: 6px;
+  color: #7d8590;
+  font-size: 14px;
+  width: 272px;
+}
+
+.search-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.App-main {
+  display: flex;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 24px;
+  gap: 24px;
+}
+
+.sidebar {
+  width: 296px;
+  flex-shrink: 0;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.sidebar-header h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #7d8590;
+}
+
+.new-repo-button {
+  background-color: #161b22;
+  color: #7d8590;
+  border: 1px solid #21262d;
+  padding: 5px 12px;
+  font-size: 12px;
+}
+
+.new-repo-button:hover {
+  background-color: #21262d;
+}
+
+.content {
+  flex: 1;
+  min-width: 0;
+}
+
+.repo-header {
+  margin-bottom: 16px;
+  border-bottom: 1px solid #21262d;
+}
+
+.repo-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.repo-nav-left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.repo-nav-left h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #7d8590;
+}
+
+.repo-meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.repo-visibility {
+  font-size: 12px;
+  padding: 2px 8px;
+  background-color: #161b22;
+  border: 1px solid #21262d;
+  border-radius: 12px;
+  color: #7d8590;
+}
+
+.repo-stats {
+  display: flex;
+  gap: 16px;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: #7d8590;
+}
+
+.stat-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.repo-nav-right {
+  display: flex;
+  gap: 8px;
+}
+
+.watch-button, .fork-button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 12px;
+  font-size: 12px;
+  background-color: #161b22;
+  border: 1px solid #21262d;
+  color: #7d8590;
+}
+
+.watch-button:hover, .fork-button:hover {
+  background-color: #21262d;
+}
+
+.button-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.repo-tabs {
+  display: flex;
+  gap: 16px;
+  border-bottom: 1px solid #21262d;
+  padding-bottom: 16px;
+}
+
+.tab-item {
+  color: #7d8590;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.tab-item:hover {
+  color: #7d8590;
+  background-color: #161b22;
+}
+
+.tab-item.active {
+  color: #7d8590;
+  background-color: #161b22;
+  border: 1px solid #21262d;
+}
+
+.file-explorer-container {
+  display: flex;
+  gap: 16px;
+  background-color: #0d1117;
+  border: 1px solid #21262d;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* Tree structure styles */
+.tree-item {
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.tree-item:hover {
+  background-color: #161b22;
+}
+
+.tree-item-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  color: #7d8590;
+}
+
+.tree-item-name {
+  font-size: 14px;
+  color: #7d8590;
+}
+
+.tree-item-children {
+  margin-left: 24px;
+  border-left: 1px solid #21262d;
+  padding-left: 8px;
+}
+
+/* GitHub-like scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #010409;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #21262d;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #30363d;
+}

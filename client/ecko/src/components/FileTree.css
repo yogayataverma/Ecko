@@ -1,0 +1,50 @@
+.file-tree {
+    padding: 8px;
+    background-color: #333;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+.file-tree-item {
+    display: flex;
+    align-items: center;
+    padding: 4px 0;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-radius: 4px;
+}
+
+.file-tree-item:hover {
+    background-color: #f2f4f7;
+}
+
+.folder-arrow {
+    margin-right: 6px;
+    font-size: 14px;
+}
+
+.file-marker {
+    margin-right: 6px;
+    font-size: 10px;
+    color: #999;
+}
+
+.folder-name, .file-name {
+    flex: 1;
+    font-size: 14px;
+}
+
+.file-tree-children {
+    margin-top: 4px;
+    margin-left: 4px;
+    border-left: 1px dotted #ddd;
+    padding-left: 8px;
+}
+
+.empty-tree {
+    padding: 16px;
+    color: #999;
+    text-align: center;
+}

@@ -1,0 +1,48 @@
+.file-viewer-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.file-tree-section {
+    flex: 0 0 300px;
+}
+
+.file-content-section {
+    flex: 1;
+}
+
+.file-viewer {
+    display: flex;
+    gap: 20px;
+}
+
+.file-tree {
+    min-width: 200px;
+    padding: 10px;
+}
+
+.directory {
+    margin-left: 20px;
+}
+
+.directory-name {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.file-item {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.file-item:hover, .directory-name:hover {
+    background-color: #f0f0f0;
+}
+
+.file-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+} 
